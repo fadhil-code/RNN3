@@ -1,3 +1,4 @@
+#Example ‒ One-to-Many – learning to generate text
 import os
 import numpy as np
 import re
@@ -49,3 +50,6 @@ batch_size = 64
 steps_per_epoch = len(texts) // seq_length // batch_size
 dataset = sequences.shuffle(10000).batch(
  batch_size, drop_remainder=True)
+
+
+
